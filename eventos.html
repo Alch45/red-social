@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/eventos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-main">
+    <div class="header-container">
+        <div class="header-brand">
+            <div class="logo-container">
+                <a href="main.html"><img class="return" src="img/regresar.png" alt=""></a>
+                <h1 class="logo-text">ComuniTec</h1>
+            </div>
+        </div>
+        <div class="header-search">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input 
+                    type="text"
+                    placeholder="Buscar compañeros, grupos o temas..."
+                    class="search-input"
+                >
+                <button class="search-filters">⚙️</button>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button class="create-btn-header">
+                <span class="create-icon">+</span>
+                Crear
+            </button>
+            <div class="notification-container">
+                <button class="notification-btn" aria-label="Notificaciones">
+                    <span class="notification-icon">🔔</span>
+                    <span class="notification-badge">3</span>
+                </button>
+            </div>
+            <div class="profile-container">
+                <div class="profile-dropdown">
+                    <div class="profile-avatar">
+                        A
+                    </div>
+                    <span class="profile-arrow">▼</span>
+                    <div class="profile-menu">
+                        <div class="profile-info">
+                            <div class="profile-name">Ana García</div>
+                            <div class="profile-email">ana.garcia@tecnm.mx</div>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <a href="Mi perfil/perfil.html" class="menu-item">
+                            <span class="menu-icon">👤</span>
+                            Mi Perfil
+                        </a>
+                        <a href="#" class="menu-item">
+                            <span class="menu-icon">⚙️</span>
+                            Configuración
+                        </a>
+                        <a href="#" class="menu-item">
+                            <span class="menu-icon">🎓</span>
+                            Mis Cursos
+                        </a>
+                        <div class="menu-divider"></div>
+                        <a href="index.html" class="menu-item logout">
+                            <span class="menu-icon">🚪</span>
+                            Cerrar Sesión
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Página eventos.html -->
+    <section class="eventos-privados">
+        <h2>Eventos Privados</h2>
+
+        <!-- Crear nuevo evento -->
+        <div class="crear-evento">
+            <h3>Crear Nuevo Evento</h3>
+            <form class="form-evento">
+                <input type="text" placeholder="Nombre del evento" required>
+                <textarea placeholder="Descripción"></textarea>
+                <input type="datetime-local" required>
+                <input type="text" placeholder="Ubicación">
+                <select>
+                    <option>Privado (solo invitados)</option>
+                    <option>Solo amigos</option>
+                </select>
+                <button type="submit">Crear Evento</button>
+            </form>
+        </div>
+
+        <!-- Lista de eventos -->
+        <div class="lista-eventos">
+            <h3>Mis Eventos</h3>
+            <div class="evento-card">
+                <h4>Fiesta de Graduación</h4>
+                <p>📅 15 Dic 2024 - 20:00</p>
+                <p>📍 Casa de María</p>
+                <p>👥 12 invitados confirmados</p>
+                <button>Gestionar Invitados</button>
+                <button>Editar Evento</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
